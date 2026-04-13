@@ -1,4 +1,4 @@
-﻿using Content.Shared.Whitelist;
+using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
@@ -42,19 +42,19 @@ public sealed partial class CargoBountyPrototype : IPrototype
 }
 
 [DataDefinition, Serializable, NetSerializable]
-public readonly partial record struct CargoBountyItemEntry()
+public partial record struct CargoBountyItemEntry()
 {
     /// <summary>
     /// A whitelist for determining what items satisfy the entry.
     /// </summary>
     [DataField(required: true)]
-    public EntityWhitelist Whitelist { get; init; } = default!;
+    public EntityWhitelist Whitelist { get; set; } = default!;
 
     /// <summary>
     /// A blacklist that can be used to exclude items in the whitelist.
     /// </summary>
     [DataField]
-    public EntityWhitelist? Blacklist { get; init; } = null;
+    public EntityWhitelist? Blacklist { get; set; } = null;
 
     // todo: implement some kind of simple generic condition system
 
@@ -62,11 +62,11 @@ public readonly partial record struct CargoBountyItemEntry()
     /// How much of the item must be present to satisfy the entry
     /// </summary>
     [DataField]
-    public int Amount { get; init; } = 1;
+    public int Amount { get; set; } = 1;
 
     /// <summary>
     /// A player-facing name for the item.
     /// </summary>
     [DataField]
-    public LocId Name { get; init; } = string.Empty;
+    public LocId Name { get; set; } = string.Empty;
 }

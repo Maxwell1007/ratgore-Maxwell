@@ -74,7 +74,7 @@ public sealed class ItemThrowingTest : InteractionTest
 
     /// <summary>
     /// Check that a physics can handle deleting a thrown entity. As to why this exists, see
-    /// https://github.com/space-wizards/RobustToolbox/pull/4746
+    /// https://github.com/Forge-Station/RobustToolbox/pull/4746
     /// </summary>
     [Test]
     [TestOf(typeof(ThrownItemComponent))]

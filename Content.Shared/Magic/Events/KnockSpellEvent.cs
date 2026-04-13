@@ -1,4 +1,4 @@
-﻿using Content.Shared.Actions;
+using Content.Shared.Actions;
 using Content.Shared.Chat;
 
 
@@ -17,5 +17,5 @@ public sealed partial class KnockSpellEvent : InstantActionEvent, ISpeakSpell
     [DataField]
     public string? Speech { get; private set; }
 
-    public InGameICChatType ChatType { get; } = InGameICChatType.Speak;
+    public InGameICChatType ChatType { get; set; } = InGameICChatType.Speak;
 }

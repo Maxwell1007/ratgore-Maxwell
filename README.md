@@ -33,6 +33,7 @@ git clone https://github.com/ss14-art/ratgore.git
 cd ratgore
 
 # 2. Загрузите движок
+git submodule sync --recursive
 git submodule update --init --recursive
 
 # 3. Соберите проект
@@ -52,6 +53,7 @@ git clone https://github.com/ss14-art/ratgore.git
 cd ratgore
 
 # 2. Загрузите движок
+git submodule sync --recursive
 git submodule update --init --recursive
 
 # 3. Соберите проект

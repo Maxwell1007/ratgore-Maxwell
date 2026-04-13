@@ -132,7 +132,7 @@ public sealed partial class HumanoidAppearanceComponent : Component
 
 [DataDefinition]
 [Serializable, NetSerializable]
-public readonly partial struct CustomBaseLayerInfo
+public partial struct CustomBaseLayerInfo
 {
     public CustomBaseLayerInfo(string? id, Color? color = null)
     {
@@ -145,11 +145,11 @@ public readonly partial struct CustomBaseLayerInfo
     ///     ID of this custom base layer. Must be a <see cref="HumanoidSpeciesSpriteLayer"/>.
     /// </summary>
     [DataField]
-    public ProtoId<HumanoidSpeciesSpriteLayer>? Id { get; init; }
+    public ProtoId<HumanoidSpeciesSpriteLayer>? Id { get; set; }
 
     /// <summary>
     ///     Color of this custom base layer. Null implies skin colour if the corresponding <see cref="HumanoidSpeciesSpriteLayer"/> is set to match skin.
     /// </summary>
     [DataField]
-    public Color? Color { get; init; }
+    public Color? Color { get; set; }
 }

@@ -1,4 +1,4 @@
-﻿using Content.Shared.Actions;
+using Content.Shared.Actions;
 using Content.Shared.Chat;
 using Robust.Shared.Prototypes;
 
@@ -18,7 +18,7 @@ public sealed partial class InstantSpawnSpellEvent : InstantActionEvent, ISpeakS
     [DataField]
     public string? Speech { get; private set; }
 
-    public InGameICChatType ChatType { get; } = InGameICChatType.Speak;
+    public InGameICChatType ChatType { get; set; } = InGameICChatType.Speak;
 
     /// <summary>
     /// Gets the targeted spawn positons; may lead to multiple entities being spawned.

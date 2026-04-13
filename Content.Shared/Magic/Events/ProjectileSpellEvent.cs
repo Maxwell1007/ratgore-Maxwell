@@ -1,4 +1,4 @@
-﻿using Content.Shared.Actions;
+using Content.Shared.Actions;
 using Content.Shared.Chat;
 using Robust.Shared.Prototypes;
 
@@ -15,5 +15,5 @@ public sealed partial class ProjectileSpellEvent : WorldTargetActionEvent, ISpea
     [DataField]
     public string? Speech { get; private set; }
 
-    public InGameICChatType ChatType { get; } = InGameICChatType.Speak;
+    public InGameICChatType ChatType { get; set; } = InGameICChatType.Speak;
 }

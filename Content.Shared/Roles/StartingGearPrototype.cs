@@ -50,7 +50,7 @@ public sealed partial class StartingGearPrototype : IPrototype, IInheritingProto
     /// <inheritdoc/>
     [AbstractDataField]
     [NeverPushInheritance]
-    public bool Abstract { get; }
+    public bool Abstract { get; set; }
 
     public string GetGear(string slot)
     {

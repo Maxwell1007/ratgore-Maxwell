@@ -8,37 +8,37 @@ namespace Content.Shared.Cargo;
 /// A data structure for storing historical information about bounties.
 /// </summary>
 [DataDefinition, NetSerializable, Serializable]
-public readonly partial record struct CargoBountyHistoryData
+public partial record struct CargoBountyHistoryData
 {
     /// <summary>
     /// A unique id used to identify the bounty
     /// </summary>
     [DataField]
-    public string Id { get; init; } = string.Empty;
+    public string Id { get; set; } = string.Empty;
 
     /// <summary>
     /// Whether this bounty was completed or skipped.
     /// </summary>
     [DataField]
-    public BountyResult Result { get; init; } = BountyResult.Completed;
+    public BountyResult Result { get; set; } = BountyResult.Completed;
 
     /// <summary>
     /// Optional name of the actor that completed/skipped the bounty.
     /// </summary>
     [DataField]
-    public string? ActorName { get; init; } = default;
+    public string? ActorName { get; set; } = default;
 
     /// <summary>
     /// Time when this bounty was completed or skipped
     /// </summary>
     [DataField]
-    public TimeSpan Timestamp { get; init; } = TimeSpan.MinValue;
+    public TimeSpan Timestamp { get; set; } = TimeSpan.MinValue;
 
     /// <summary>
     /// The prototype containing information about the bounty.
     /// </summary>
     [DataField(required: true)]
-    public ProtoId<CargoBountyPrototype> Bounty { get; init; } = string.Empty;
+    public ProtoId<CargoBountyPrototype> Bounty { get; set; } = string.Empty;
 
     public CargoBountyHistoryData(CargoBountyData bounty, BountyResult result, TimeSpan timestamp, string? actorName)
     {

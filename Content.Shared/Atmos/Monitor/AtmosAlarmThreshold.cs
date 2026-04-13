@@ -256,13 +256,13 @@ public sealed partial class AtmosAlarmThreshold
 }
 
 [DataDefinition, Serializable]
-public readonly partial struct AlarmThresholdSetting
+public partial struct AlarmThresholdSetting
 {
     [DataField("enabled")]
-    public bool Enabled { get; init; } = true;
+    public bool Enabled { get; set; } = true;
 
     [DataField("threshold")]
-    public float Value { get; init; } = 1;
+    public float Value { get; set; } = 1;
 
     public static AlarmThresholdSetting Disabled = new() {Enabled = false, Value = 0};
 

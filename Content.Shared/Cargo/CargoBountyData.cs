@@ -8,20 +8,20 @@ namespace Content.Shared.Cargo;
 /// A data structure for storing currently available bounties.
 /// </summary>
 [DataDefinition, NetSerializable, Serializable]
-public readonly partial record struct CargoBountyData
+public partial record struct CargoBountyData
 {
     /// <summary>
     /// A unique id used to identify the bounty
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public string Id { get; init; } = string.Empty;
+    public string Id { get; set; } = string.Empty;
 
     /// <summary>
     /// The prototype containing information about the bounty.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField(required: true)]
-    public ProtoId<CargoBountyPrototype> Bounty { get; init; } = string.Empty;
+    public ProtoId<CargoBountyPrototype> Bounty { get; set; } = string.Empty;
 
     public CargoBountyData(CargoBountyPrototype bounty, int uniqueIdentifier)
     {

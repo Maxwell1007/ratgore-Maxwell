@@ -6,6 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\RobustToolbox\Imports\Shared.props" />
 
   <PropertyGroup>
     <!-- Work around https://github.com/dotnet/project-system/issues/4314 -->
@@ -29,7 +30,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
       <ProjectReference Include="..\Content.Goobstation.Maths\Content.Goobstation.Maths.csproj" />
       <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" />
       <ProjectReference Include="..\Content.Server\Content.Server.csproj" />
-      <ProjectReference Include="..\RobustToolbox\Robust.Shared\Robust.Shared.csproj" />
     </ItemGroup>
 
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />

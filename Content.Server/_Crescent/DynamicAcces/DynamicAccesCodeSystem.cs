@@ -4,7 +4,6 @@ using Content.Server.Shuttles.Components;
 using Content.Shared._Crescent;
 using Content.Shared._Crescent.DynamicCodes;
 using Content.Shared.Shuttles.BUIStates;
-using Microsoft.CodeAnalysis;
 using Robust.Server.GameObjects;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;

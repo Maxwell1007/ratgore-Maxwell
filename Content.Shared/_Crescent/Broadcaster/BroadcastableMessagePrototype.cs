@@ -11,7 +11,7 @@ public sealed partial class BroadcastableMessagePrototype : IPrototype
 {
     /// <inheritdoc/>
     [IdDataField]
-    public string ID { get; } = default!;
+    public string ID { get; set; } = default!;
 
     /// <summary>
     /// Name that shows in the Broadcasting Console

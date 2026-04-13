@@ -32,5 +32,5 @@ public sealed partial class LesserKnockdownSpellEvent : WorldTargetActionEvent, 
     public string? Speech { get; private set; }
 
     [DataField]
-    public InGameICChatType ChatType { get; private set; }
+    public InGameICChatType ChatType { get; set; }
 }

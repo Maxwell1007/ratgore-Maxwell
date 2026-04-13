@@ -23,5 +23,5 @@ public sealed partial class LesserHackSpellEvent : EntityTargetActionEvent, ISpe
     public string? Speech { get; private set; }
 
     [DataField]
-    public InGameICChatType ChatType { get; private set; }
+    public InGameICChatType ChatType { get; set; }
 }

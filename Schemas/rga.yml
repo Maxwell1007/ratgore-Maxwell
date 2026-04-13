@@ -1,4 +1,4 @@
-# If this gets updated, make sure to also update https://github.com/space-wizards/RobustToolboxSpecifications
+# If this gets updated, make sure to also update https://github.com/Forge-Station/RobustToolboxSpecifications
 
 list(include('attribution'), min=1)
 ---

@@ -37,6 +37,7 @@ cd ratgore
 
 # 2. Download the engine
 
+git submodule sync --recursive
 git submodule update --init --recursive
 
 # 3. Build the project
@@ -62,6 +63,7 @@ cd ratgore
 
 # 2. Download the engine
 
+git submodule sync --recursive
 git submodule update --init --recursive
 
 # 3. Build the project

@@ -3,7 +3,7 @@ namespace Content.Shared._Shitmed.Medical.Surgery.Tools;
 public interface ISurgeryToolComponent
 {
     [DataField]
-    public string ToolName { get; }
+    public string ToolName { get; set; }
 
     /// <summary>
     ///     Field intended for discardable or non-reusable tools.

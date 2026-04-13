@@ -48,10 +48,10 @@ public sealed class TimeTransferWarningEuiMessage : EuiMessageBase
 public partial record struct TimeTransferData
 {
     [DataField]
-    public string TimeString { get; init; }
+    public string TimeString { get; set; }
 
     [DataField]
-    public string PlaytimeTracker { get; init; }
+    public string PlaytimeTracker { get; set; }
 
     public TimeTransferData(string tracker, string timeString)
     {

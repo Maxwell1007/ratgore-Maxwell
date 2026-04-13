@@ -12,22 +12,22 @@ namespace Content.Shared._EE.Contractors.Prototypes;
 public sealed partial class EmployerPrototype : IPrototype
 {
     [IdDataField, ViewVariables]
-    public string ID { get; } = string.Empty;
+    public string ID { get; set; } = string.Empty;
 
     [DataField]
-    public string NameKey { get; } = string.Empty;
+    public string NameKey { get; set; } = string.Empty;
 
     [DataField]
-    public string DescriptionKey { get; } = string.Empty;
+    public string DescriptionKey { get; set; } = string.Empty;
 
     [DataField]
-    public Color PrimaryColour { get; } = Color.FromHex("#23BB32");
+    public Color PrimaryColour { get; set; } = Color.FromHex("#23BB32");
 
     [DataField]
-    public Color SecondaryColour { get; } = Color.FromHex("#AABB32");
+    public Color SecondaryColour { get; set; } = Color.FromHex("#AABB32");
 
     [DataField, ViewVariables]
-    public HashSet<ProtoId<EmployerPrototype>> Rivals { get; } = new();
+    public HashSet<ProtoId<EmployerPrototype>> Rivals { get; set; } = new();
 
     [DataField]
     public List<CharacterRequirement> Requirements = new();

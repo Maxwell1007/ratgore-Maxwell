@@ -85,7 +85,7 @@ public partial class NavMapControl : MapGridControl
     private PhysicsComponent? _physics;
     private FixturesComponent? _fixtures;
 
-    // TODO: https://github.com/space-wizards/RobustToolbox/issues/3818
+    // TODO: https://github.com/Forge-Station/RobustToolbox/issues/3818
     private readonly Label _zoom = new()
     {
         VerticalAlignment = VAlignment.Top,

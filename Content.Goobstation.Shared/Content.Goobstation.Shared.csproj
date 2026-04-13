@@ -6,9 +6,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="..\RobustToolbox\Imports\Shared.props" />
 
     <PropertyGroup>
-      <TargetFramework>net9.0</TargetFramework>
+      <TargetFramework>$(TargetFramework)</TargetFramework>
       <LangVersion>12</LangVersion>
       <IsPackable>false</IsPackable>
       <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -18,7 +19,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
     <ItemGroup>
       <ProjectReference Include="..\Content.Shared\Content.Shared.csproj" />
-      <ProjectReference Include="..\RobustToolbox\Robust.Shared\Robust.Shared.csproj" Private="false" />
     </ItemGroup>
 
     <ItemGroup>

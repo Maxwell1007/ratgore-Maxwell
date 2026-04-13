@@ -1,4 +1,4 @@
-﻿using Content.Shared.Chat;
+using Content.Shared.Chat;
 
 namespace Content.Shared.Magic;
 
@@ -10,5 +10,5 @@ public interface ISpeakSpell // The speak n spell interface
     public string? Speech { get; }
 
     [DataField]
-    public InGameICChatType ChatType { get; }
+    public InGameICChatType ChatType { get; set; }
 }

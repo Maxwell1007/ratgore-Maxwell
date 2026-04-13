@@ -6,7 +6,7 @@ namespace Content.Shared.Prototypes;
 public abstract class LocalizedPrototype : IPrototype
 {
     [IdDataField]
-    public string ID { get; } = default!;
+    public string ID { get; set; } = default!;
 
     public const string LocFormat = "{0}-{1}-{2}";
 

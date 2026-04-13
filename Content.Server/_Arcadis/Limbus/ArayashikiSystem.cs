@@ -12,7 +12,6 @@ using Content.Shared.PDA;
 using Content.Shared.StationRecords;
 using Content.Shared.Traits.Assorted.Components;
 using Content.Shared.Weapons.Melee.Events;
-using Microsoft.CodeAnalysis;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Physics.Components;

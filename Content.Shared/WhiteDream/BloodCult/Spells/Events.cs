@@ -1,4 +1,4 @@
-﻿using Content.Shared.Actions;
+using Content.Shared.Actions;
 using Content.Shared.Chat;
 using Content.Shared.DoAfter;
 using Content.Shared.Magic;
@@ -20,7 +20,7 @@ public sealed partial class BloodCultTeleportEvent : EntityTargetActionEvent, IS
     [DataField]
     public string? Speech { get; set; }
 
-    public InGameICChatType ChatType => InGameICChatType.Whisper;
+    public InGameICChatType ChatType { get; set; } = InGameICChatType.Whisper;
 }
 
 public sealed partial class BloodCultEmpEvent : InstantActionEvent, ISpeakSpell
@@ -37,7 +37,7 @@ public sealed partial class BloodCultEmpEvent : InstantActionEvent, ISpeakSpell
     [DataField]
     public string? Speech { get; set; }
 
-    public InGameICChatType ChatType => InGameICChatType.Whisper;
+    public InGameICChatType ChatType { get; set; } = InGameICChatType.Whisper;
 }
 
 public sealed partial class BloodCultTwistedConstructionEvent : EntityTargetActionEvent, ISpeakSpell
@@ -45,7 +45,7 @@ public sealed partial class BloodCultTwistedConstructionEvent : EntityTargetActi
     [DataField]
     public string? Speech { get; set; }
 
-    public InGameICChatType ChatType => InGameICChatType.Whisper;
+    public InGameICChatType ChatType { get; set; } = InGameICChatType.Whisper;
 }
 
 public sealed partial class SummonEquipmentEvent : InstantActionEvent, ISpeakSpell
@@ -65,7 +65,7 @@ public sealed partial class SummonEquipmentEvent : InstantActionEvent, ISpeakSpe
     [DataField]
     public InGameICChatType InvokeChatType = InGameICChatType.Whisper;
 
-    public InGameICChatType ChatType => InGameICChatType.Whisper;
+    public InGameICChatType ChatType { get; set; } = InGameICChatType.Whisper;
 }
 
 public sealed partial class BloodSpearRecalledEvent : InstantActionEvent;

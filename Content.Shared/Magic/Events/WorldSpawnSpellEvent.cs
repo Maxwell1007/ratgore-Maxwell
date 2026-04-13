@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Shared.Actions;
 using Content.Shared.Chat;
 using Content.Shared.Storage;
@@ -33,5 +33,5 @@ public sealed partial class WorldSpawnSpellEvent : WorldTargetActionEvent, ISpea
     [DataField]
     public string? Speech { get; private set; }
 
-    public InGameICChatType ChatType { get; } = InGameICChatType.Speak;
+    public InGameICChatType ChatType { get; set; } = InGameICChatType.Speak;
 }

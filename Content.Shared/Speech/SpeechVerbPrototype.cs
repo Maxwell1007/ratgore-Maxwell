@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Prototypes;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Speech;
 
@@ -9,7 +9,7 @@ namespace Content.Shared.Speech;
 [Prototype("speechVerb")]
 public sealed partial class SpeechVerbPrototype : IPrototype
 {
-    [IdDataField] public string ID { get; } = default!;
+    [IdDataField] public string ID { get; set; } = default!;
 
     /// <summary>
     ///     Loc strings to be passed to the chat wrapper. 'says', 'states', etc.
